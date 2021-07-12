@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input {
+  height: 26px;
+  padding: 5px 10px;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 2px;
+  width: calc(100% - 70px);
+  border: 1px solid #FF5574;
+}
+button {
+  background: #FF5574;
+  color: #fff;
+  border: none;
+  height: 38px;
+  width: 70px;
+  font-family: 'Questrial', sans-serif;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+p.tfooter {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #c3d0d8;
+    margin: 0;
+}
+h1 {
+    font-size: 38.92px;
+    font-weight: bold;
+    letter-spacing: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 45px;
+    text-align: center;
+}
+h3 {
+    margin: 0 0 8px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 16.83px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
