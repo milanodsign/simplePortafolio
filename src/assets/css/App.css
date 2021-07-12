@@ -264,8 +264,9 @@ hr {
     transition: .4 ease;
 }
 
-.menu_on {
+nav.top-menu ul > span.menu_on {
     display: none;
+    margin-left: 15px;
 }
 
 .menuResponsive {
@@ -275,7 +276,7 @@ hr {
     height: 100vh;
     background: #fff;
     right: 0;
-    z-index: 999;
+    z-index: 99999;
     transition: .6s ease;
 }
 
@@ -341,7 +342,7 @@ div#inputSearch {
     top: 100px;
     transition: .4s ease;
     overflow: hidden;
-    z-index: 9000;
+    z-index: 10000;
 }
 div#inputSearch.active {
     height: 60px;
@@ -413,7 +414,13 @@ span.pics > div.active > span > label {
     left: 13px;
     border-radius: 4px;
 }
-
+nav.top-menu > ul > span:nth-child(6):hover {
+    background: none;
+}
+input:focus-visible, input:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+    border: 1px solid #FF5574;
+}
 
 
 
@@ -435,7 +442,7 @@ span.pics > div.active > span > label {
     header.App-header {
         position: fixed;
         background: #fff;
-        z-index: 99;
+        z-index: 9999;
         transition: .4 ease;
     }
     .boxed1170>div:first-child {
@@ -504,11 +511,14 @@ span.pics > div.active > span > label {
         display: none;
     }
 
-    nav.top-menu ul>span:last-child {
+    /* nav.top-menu ul>span:last-child {
         display: none;
-    }
+    } */
 
-    .menu_on {
+    div#inputSearch {
+        top: 60px;
+    }
+    nav.top-menu ul > span.menu_on {
         display: inline-block;
         width: 30px;
         height: 20px;
@@ -516,20 +526,20 @@ span.pics > div.active > span > label {
         z-index: 2;
     }
 
-    .menu_on span {
+    nav.top-menu ul > span.menu_on span {
         width: 30px;
         height: 4px;
         border-radius: 4px;
         display: block;
         position: absolute;
-        background: #FF5574;
+        background: #FF889D;
     }
 
-    .menu_on span:nth-child(2) {
+    nav.top-menu ul > span.menu_on span:nth-child(2) {
         top: calc(50% - 2px);
     }
 
-    .menu_on span:nth-child(3) {
+    nav.top-menu ul > span.menu_on span:nth-child(3) {
         bottom: 0;
     }
 
@@ -556,6 +566,9 @@ span.pics > div.active > span > label {
     }
 }
 @media screen and (max-width:480px) {
+    div#inputSearch {
+        width: calc(100% - 20px)
+    }
     .portfolio {
         -webkit-column-count: 1;
         -moz-column-count: 1;

@@ -51,6 +51,7 @@ function App() {
     console.log('aja');
     $('.menuResponsive').addClass('active');
     $('.close, .menuResponsive ul').show();
+    $('#inputSearch').removeClass('active');
   }
   function CloseMenuResponsive() {
     $('.menuResponsive').removeClass('active');
@@ -209,13 +210,13 @@ function App() {
                 <li>
                   <span className="app" onClick={fetchApp}>App</span>
                 </li>
+                <span>
+                  <img src={search} onClick={searchApp} />
+                </span>
                 <span className="menu_on" onClick={OpenMenuResponsive}>
                   <span></span>
                   <span></span>
                   <span></span>
-                </span>
-                <span>
-                  <img src={search} onClick={searchApp} />
                 </span>
               </ul>
             </nav>
